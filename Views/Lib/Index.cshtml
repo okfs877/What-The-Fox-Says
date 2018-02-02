@@ -1,0 +1,25 @@
+@Html.Partial("./Partials/Navbar")
+<div id="wrapper">
+<h1>What the Fox Says</h1>
+<h2>A Madlib generation and playing application</h2>
+    <h3>Submissions</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (var story in ViewBag.libs)
+                {
+                    <tr>
+                        <td>@story.Title</td>
+                        <td><button><a href="/dashboard/play/@story.Id">Play 🦊</a></button> <button><a href="/dashboard/view/@story.Id">View 🦊</a></button></td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

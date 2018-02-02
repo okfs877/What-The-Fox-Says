@@ -1,0 +1,16 @@
+@model multilib.Models.LoginUser
+<div id="loginDiv">
+    <h1>Login</h1>
+    <form asp-action="Login" asp-controller="Home" method="post">
+        <span asp-validation-for="LogEmail"></span>
+        <div class="form-group">
+            <label asp-for="LogEmail"></label>
+            <input class="form-control" asp-for="LogEmail">
+        </div>
+        <div class="form-group">
+            <label asp-for="LogPassword"></label>
+            <input class="form-control" asp-for="LogPassword">
+        </div>
+        <input type="submit" value="Submit" class="submit">
+    </form>
+</div>

@@ -1,0 +1,14 @@
+@Html.Partial("./Partials/Navbar")
+<h1>@ViewBag.lib.Title</h1>
+    <form action="/dashboard/process" method="POST">
+    <div id="playlist">
+    @foreach(var input in ViewBag.inputs){
+        <div class="madinput">
+            <label for="inputs">@input</label>
+            <input type="text" name="inputs">
+        </div>
+    }
+    </div>
+    <input type="hidden" name="id" value="@ViewBag.lib.Id">
+    <input type="submit" value="Submit 🦊" class="submit">
+    </form>

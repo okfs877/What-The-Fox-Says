@@ -1,0 +1,69 @@
+/*Write all of your CSS here*/
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0,0,0,0);
+}
+body{
+    background-color: rgba(0,0,0,0);
+}
+#logregwrapper, #wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(darkorange), to(orangered)) fixed;
+    background: -webkit-linear-gradient(top, white, darkorange, orangered) fixed;
+    background: -moz-linear-gradient(top, white, darkorange, orangered) fixed;
+    background: linear-gradient(to bottom, white, darkorange, orangered) fixed;
+}
+html{
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(darkorange), to(orangered)) fixed;
+    background: -webkit-linear-gradient(top, white, darkorange, orangered) fixed;
+    background: -moz-linear-gradient(top, white, darkorange, orangered) fixed;
+    background: linear-gradient(to bottom, white, darkorange, orangered) fixed;
+}
+input, select, textarea{
+    background-color: #fff;
+    box-shadow: grey 2px 2px 5px 0px;
+}
+button, .submit{
+    border-radius: 8px;
+    padding: 3px;
+    background-color: white;
+}
+#loginDiv, #regdiv{
+    width:400px;
+}
+#navdiv{
+    font-size: 12pt;
+    background-color: rgba(0,0,0,0);
+}
+#wrapper{
+    flex-direction: column;
+    justify-content: center;
+}
+th, td{
+    margin: 20px;
+    padding:10px;
+    border: solid black 1px;
+}
+#playlist{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0,0);
+}
+.madinput{
+    margin-bottom:5px;
+}
+
+.result{
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    width:66%;
+    background-color: orangered;
+    font-family: "Comic Sans MS", cursive,  sans-serif;
+    font-size: 14pt;
+}
